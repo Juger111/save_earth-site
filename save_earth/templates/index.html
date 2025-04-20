@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Сохрани землю</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">1</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">2</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Секция превью -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">Помоги земле</h1>
+        <p class="home__subtitle">
+          Наша планета — это удивительное место, полное жизни и красоты. Мы дышим её воздухом, пьём её воду, питаемся тем, что она нам даёт. Но с каждым годом Земле становится всё труднее. Из-за загрязнения, вырубки лесов и изменения климата природа разрушается, исчезают животные, а погода становится всё более непредсказуемой.
+          
+          Но мы можем это изменить. Помощь начинается с простых вещей: сортируй мусор, используй меньше пластика, не выбрасывай мусор в природе, экономь воду и свет. Вместо машины можно выбрать велосипед или прогулку пешком. А если у тебя есть возможность — посади дерево, оно подарит кислород и тень будущим поколениям.
+          
+          Каждое доброе дело во благо природы — это шаг к спасению нашей планеты. Важно не ждать, пока начнут другие, — начни сам. Земля дала нам жизнь, а теперь она нуждается в нашей заботе.
+          
+          Помоги Земле — она нуждается в твоей помощи.
+        </p>
+      </section>
+
+      <!-- Секция с рассказом о себе -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">Какая одна из главных проблем сейчас на земле?</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            Глобальное потепление — это устойчивое повышение средней температуры на Земле. Учёные заметили, что за последние 100–150 лет климат на планете стал меняться особенно быстро, и причиной этого в основном стала деятельность человека, это не только проблема учёных и политиков. Это дело каждого из нас. Если мы начнём с маленьких шагов — сортировать отходы, экономить энергию, заботиться о природе — вместе мы можем сделать большое дело.
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/global_heat.png"
+            alt="Глобальное потепление"
+            width="250"
+            height="250"
+          />
+        </div>
+      </section>
+
+      <!-- Секция О нас -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">О нас</h2>
+        <ul class="skills__list skills-list">
+          <!-- Ссылка на Telegram‑бот -->
+          <li class="skill">
+            <a
+              class="skill__link"
+              href="https://t.me/Jugerno1_bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="skill__img"
+                src="../static/img/telegreamo_22.png"
+                alt="Telegram‑бот"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Наш Telegram‑бот</span>
+            </a>
+          </li>
+
+          <!-- Ссылка на Discord‑сервер -->
+          <li class="skill">
+            <a
+              class="skill__link"
+              href="https://discord.gg/ecGW8PkH"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="skill__img"
+                src="../static/img/discord.png"
+                alt="Discord‑сервер"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Дискорд сервер</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Секция с формой обратной связи -->
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">Предложения</h2>
+        <form action="" method="POST" class="feedback__form form">
+          <label for="email">
+            <input
+              type="email"
+              class="form__input"
+              name="email"
+              id="email"
+              placeholder="Введите E-mail"
+              required
+            >
+          </label>
+          <label for="text">
+            <textarea
+              name="text"
+              class="form__input"
+              id="text"
+              cols="70"
+              rows="10"
+              required
+              placeholder="Напиши сюда то что думаешь нам стоит добавить!"
+            ></textarea>
+          </label>
+          <button class="form__button" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Подвал для ссылок на соц-сети -->
+    <footer></footer>
+  </body>
+</html>
